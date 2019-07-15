@@ -4,8 +4,11 @@ public class Deportista extends Persona {
     private String correo;
     private String categoria;
 
-    public Deportista(String nombre, String apellido, int edad) {
+    public Deportista(String nombre, String apellido, int edad, String deporte, String correo, String categoria) {
         super(nombre, apellido, edad);
+        this.deporte=deporte;
+        this.correo=correo;
+        this.categoria= categoria;
     }
     public String getDeporte() {
         return deporte;
